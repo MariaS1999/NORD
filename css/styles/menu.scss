@@ -1,0 +1,36 @@
+.menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    &__item{
+        overflow: hidden;
+    }
+    &__link{
+        color: #000000;
+        text-decoration: none;
+        font-family: 'Playfair Display', serif;
+        font-size: 18px;
+
+        &::after{
+            position: relative;
+            left: -1px;
+            content: '';
+            display: block;
+            height: 1px;
+            width: 100%;
+            background-color: #000000;
+            margin-top: 2px;
+            transform: translateX(-100%);
+            transition: 200ms ease-in;
+        }
+
+        &:hover{
+            &::after{
+                transform: translateX(0);
+                left: 0px;
+            }
+        }
+    }
+}

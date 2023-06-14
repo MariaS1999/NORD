@@ -1,0 +1,40 @@
+.burger{
+    display: none;
+    transition: 100ms ease-in;
+    cursor: pointer;
+    @media (max-width: 885px){
+        display: block;
+        position: fixed;
+        right: 20px;
+    }
+    @media (max-width: 545px) {
+        right: 10px;
+    }
+    &__line{
+        position: relative;
+        width: 19px;
+        height: 1px;
+        background-color: $color3;
+        margin-bottom: 4px;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    &_active{
+        .burger__line{
+            background-color: $color1;
+        }
+        .burger__line:nth-child(1){
+            transform: rotate(45deg);
+            top: 2.5px;
+        }
+        .burger__line:nth-child(2){
+            display: none;
+        }
+        .burger__line:nth-child(3){
+            transform: rotate(-45deg);
+            top: -2.5px;
+        }
+    }
+}

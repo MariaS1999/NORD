@@ -1,0 +1,15 @@
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+@media (max-width: 1280px) {
+  .wrapper {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
+@media (max-width: 545px) {
+  .wrapper {
+    padding: 0 10px;
+  }
+}/*# sourceMappingURL=wrapper.css.map */

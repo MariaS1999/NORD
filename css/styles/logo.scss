@@ -1,0 +1,25 @@
+.logo{
+    text-decoration: none;
+    margin-bottom: 30px;
+
+    @media (max-width: 885px){
+        margin-bottom: 0px;
+    }
+    &__img{
+        display: block;
+        margin: 0 auto;
+
+        @media (max-width: 885px){
+            width: 33px;
+        }
+    }
+    &__text{
+        font-family: $fontOpenSans;
+        font-weight: 800;
+        font-size: 32px;
+
+        @media (max-width: 885px) {
+            font-size: 11px;
+        }
+    }
+}

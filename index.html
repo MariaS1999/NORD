@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="css/styles/reset.css">
+    <link rel="stylesheet" href="css/homepage/styles.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="header__logo logo">
+            <img src="images/logo.svg" alt="logo" class="logo__img">
+            <span class="logo__text">АСК НОРД</span>
+        </a>
+        <ul class="header__menu menu js-header-menu">
+            <li class="menu__item">
+                <a href="/" class="menu__link">Главная</a>
+            </li>
+            <li class="menu__item">
+                <a href="about_us.html" class="menu__link">О нас</a>
+            </li>
+            <li class="menu__item">
+                <a href="services.html" class="menu__link">Услуги</a>
+            </li>
+            <li class="menu__item">
+                <a href="objects.html" class="menu__link">Объекты</a>
+            </li>
+            <li class="menu__item">
+                <a href="news.html" class="menu__link">Новости</a>
+            </li>
+            <li class="menu__item">
+                <a href="contacts.html" class="menu__link">Контакты</a>
+            </li>
+        </ul>
+        <div class="header__burger burger js-burger">
+            <div class="burger__line"></div>
+            <div class="burger__line"></div>
+            <div class="burger__line"></div>
+        </div>
+    </header>
+    <main class="main wrapper">
+        <section class="first">
+            <div class="first__name">
+                <h2 class="first__subtitle">Архитектурное бюро</h2>
+                <h1 class="first__title">АСК НОРД</h1>
+                <a href="#" class="first__link arrow-link">О нас</a>
+            </div>
+        </section>
+        <h2 class="main__title">Основные услуги</h2>
+        <section class="services">
+            <div class="services__card">
+                <img src="images/card1.jpg" alt="card" class="services__card-img">
+                <h3 class="services__card-title">Проектирование и обследование</h3>
+                <p class="services__card-description">
+                    Реставрация архитектуры должна проводиться только после тщательного обследования и подготовки проекта.
+                </p>
+                <a href="#" class="services__card-link card-link arrow-link arrow-link_black">Подробнее</a>
+            </div>
+            <div class="services__card">
+                <img src="images/card2.jpg" alt="card" class="services__card-img">
+                <h3 class="services__card-title">Инженерные системы</h3>
+                <p class="services__card-description">
+                    Работы по монтажу и ремонту систем электроснабжения, систем вентиляции и кондиционирования, отопления, сети сигнализации и связи, пожарной сигнализации.
+                </p>
+                <a href="#" class="services__card-link card-link arrow-link arrow-link_black">Подробнее</a>
+            </div>
+            <div class="services__card">
+                <img src="images/card3.jpg" alt="card" class="services__card-img">
+                <h3 class="services__card-title">Общестроительные работы</h3>
+                <p class="services__card-description">
+                    Весь спектр многопрофильных работ, состоящих из проектирования, подготовки и возведения объекта, его отделки, обустройства и дальнейшего обслуживания.
+                </p>
+                <a href="#" class="services__card-link card-link arrow-link arrow-link_black">Подробнее</a>
+            </div>
+        </section>
+        <h2 class="main__title">Последние объекты</h2>
+        <section class="objects js-objects">
+            <div class="objects__slide">
+                <img src="images/object1.jpg" alt="СПбНЦ РАН" class="objects__img">
+                <div class="objects__text">
+                    <h3 class="objects__title">СПбНЦ РАН</h3>
+                    <p class="objects__description">Разработка проектной документации и работы по реставрации оконных заполнений здания СПбНЦ РАН.</p>
+                    <div class="objects__nav">
+                        <div class="objects__buttons">
+                            <button class="objects__button js-objects-left objects__button_reverse">
+                                <svg width="8" height="14" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.059886 8.66766C-0.0203328 8.74325 -0.0207081 8.86629 0.0589485 8.94223C0.138793 9.01834 0.26868 9.0187 0.348899 8.94311L4.93918 4.63717C5.01921 4.56159 5.01978 4.43854 4.93993 4.36243L0.348899 0.0559604C0.26868 -0.0196255 0.138793 -0.019274 0.0589485 0.0568393C-0.0207081 0.132777 -0.0203328 0.255824 0.059886 0.33141L4.50323 4.49936L0.059886 8.66766Z" fill="black"/>
+                                </svg>
+                            </button>
+                            <button class="objects__button js-objects-right">
+                                <svg width="8" height="14" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.059886 8.66766C-0.0203328 8.74325 -0.0207081 8.86629 0.0589485 8.94223C0.138793 9.01834 0.26868 9.0187 0.348899 8.94311L4.93918 4.63717C5.01921 4.56159 5.01978 4.43854 4.93993 4.36243L0.348899 0.0559604C0.26868 -0.0196255 0.138793 -0.019274 0.0589485 0.0568393C-0.0207081 0.132777 -0.0203328 0.255824 0.059886 0.33141L4.50323 4.49936L0.059886 8.66766Z" fill="black"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <a href="#" class="objects__link">Другие объекты</a>
+                    </div>
+                </div>
+            </div>
+            <div class="objects__slide">
+                <img src="images/object1.jpg" alt="СПбНЦ РАН" class="objects__img">
+                <div class="objects__text">
+                    <h3 class="objects__title">СПбНЦ РАН</h3>
+                    <p class="objects__description">Разработка проектной документации и работы по реставрации оконных заполнений здания СПбНЦ РАН.</p>
+                    <div class="objects__nav">
+                        <div class="objects__buttons">
+                            <button class="objects__button js-objects-left objects__button_reverse">
+                                <svg width="8" height="14" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.059886 8.66766C-0.0203328 8.74325 -0.0207081 8.86629 0.0589485 8.94223C0.138793 9.01834 0.26868 9.0187 0.348899 8.94311L4.93918 4.63717C5.01921 4.56159 5.01978 4.43854 4.93993 4.36243L0.348899 0.0559604C0.26868 -0.0196255 0.138793 -0.019274 0.0589485 0.0568393C-0.0207081 0.132777 -0.0203328 0.255824 0.059886 0.33141L4.50323 4.49936L0.059886 8.66766Z" fill="black"/>
+                                </svg>
+                            </button>
+                            <button class="objects__button js-objects-right">
+                                <svg width="8" height="14" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.059886 8.66766C-0.0203328 8.74325 -0.0207081 8.86629 0.0589485 8.94223C0.138793 9.01834 0.26868 9.0187 0.348899 8.94311L4.93918 4.63717C5.01921 4.56159 5.01978 4.43854 4.93993 4.36243L0.348899 0.0559604C0.26868 -0.0196255 0.138793 -0.019274 0.0589485 0.0568393C-0.0207081 0.132777 -0.0203328 0.255824 0.059886 0.33141L4.50323 4.49936L0.059886 8.66766Z" fill="black"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <a href="#" class="objects__link">Другие объекты</a>
+                    </div>
+                </div>
+            </div>
+            <div class="objects__slide">
+                <img src="images/object1.jpg" alt="СПбНЦ РАН" class="objects__img">
+                <div class="objects__text">
+                    <h3 class="objects__title">СПбНЦ РАН</h3>
+                    <p class="objects__description">Разработка проектной документации и работы по реставрации оконных заполнений здания СПбНЦ РАН.</p>
+                    <div class="objects__nav">
+                        <div class="objects__buttons">
+                            <button class="objects__button js-objects-left objects__button_reverse">
+                                <svg width="8" height="14" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.059886 8.66766C-0.0203328 8.74325 -0.0207081 8.86629 0.0589485 8.94223C0.138793 9.01834 0.26868 9.0187 0.348899 8.94311L4.93918 4.63717C5.01921 4.56159 5.01978 4.43854 4.93993 4.36243L0.348899 0.0559604C0.26868 -0.0196255 0.138793 -0.019274 0.0589485 0.0568393C-0.0207081 0.132777 -0.0203328 0.255824 0.059886 0.33141L4.50323 4.49936L0.059886 8.66766Z" fill="black"/>
+                                </svg>
+                            </button>
+                            <button class="objects__button js-objects-right">
+                                <svg width="8" height="14" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.059886 8.66766C-0.0203328 8.74325 -0.0207081 8.86629 0.0589485 8.94223C0.138793 9.01834 0.26868 9.0187 0.348899 8.94311L4.93918 4.63717C5.01921 4.56159 5.01978 4.43854 4.93993 4.36243L0.348899 0.0559604C0.26868 -0.0196255 0.138793 -0.019274 0.0589485 0.0568393C-0.0207081 0.132777 -0.0203328 0.255824 0.059886 0.33141L4.50323 4.49936L0.059886 8.66766Z" fill="black"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <a href="#" class="objects__link">Другие объекты</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <h2 class="main__title">Лицензии</h2>
+        <div class="license">
+            <img src="images/license.jpg" alt="license">
+            <img src="images/license.jpg" alt="license">
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__header">
+                <a href="#" class="footer__logo logo">
+                    <img src="images/logo_footer.svg" alt="logo" class="logo__img">
+                    <span class="logo__text">АСК НОРД</span>
+                </a>
+                <ul class="footer__menu menu">
+                    <li class="menu__item">
+                        <a href="about_us.html" class="menu__link">О нас</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="services.html" class="menu__link">Услуги</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="objects.html" class="menu__link">Объекты</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="news.html" class="menu__link">Новости</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="contacts.html" class="menu__link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__main">
+                <div class="footer__left">
+                    <div class="footer__list contacts-list">
+                        <ul class="contacts-list__markers">
+                            <li class="contacts-list__item">Телефон:</li>
+                            <li class="contacts-list__item">Email:</li>
+                            <li class="contacts-list__item">Адрес:</li>
+                        </ul>
+                        <ul class="contacts-list__elements">
+                            <li class="contacts-list__item contacts-list__item_phone">8 (999) 123 45 67</li>
+                            <li class="contacts-list__item">test@test.ru</li>
+                            <li class="contacts-list__item">Санкт-Петербург, проспект Луначарского, дом 13, корп. 1, лит. А, пом. 60Н, офис 2</li>
+                        </ul>
+                    </div>
+                    <ul class="footer__sotial sotial-list">
+                        <li class="sotial-list__item">
+                            <a href="#" class="sotial-list__item">
+                                <img class="sotial-list__img" src="images/icons/tlg.svg" alt="telegram">
+                            </a>
+                        </li>
+                        <li class="sotial-list__item">
+                            <a href="#" class="sotial-list__item">
+                                <img class="sotial-list__img" src="images/icons/inst.svg" alt="instagram">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <form action="" class="footer__form">
+                    <input type="text" name="name" class="footer__input" placeholder="Имя">
+                    <input type="email" name="email" class="footer__input" placeholder="Email">
+                    <textarea name="message" class="footer__input footer__textarea" placeholder="Сообщение:"></textarea>
+                    <input type="submit" name="submit" class="footer__button">
+                </form>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="js/objects.js"></script>
+    <script src="js/header.js"></script>
+</body>
+</html>

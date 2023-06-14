@@ -1,0 +1,23 @@
+.main{
+    @media (max-width: 885px) {
+        padding-top: 85px;
+    }
+    &__title{
+        margin-top: 40px;
+        margin-bottom: 50px;
+        font-family: $fontPlayfair;
+        text-align: center;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 43px;
+        color: $color3;
+
+        @media (max-width: 545px) {
+            margin-top: 30px;
+            margin-bottom: 40px;
+            font-size: 28px;
+            line-height: 38px;
+        }
+    }
+}

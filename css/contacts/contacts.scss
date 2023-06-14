@@ -1,0 +1,145 @@
+.contacts{
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+
+        @media (max-width: 885px) {
+            flex-direction: column;
+            gap: 30px;
+            margin-bottom: 35px;
+        }
+
+        @media (max-width: 545px) {
+            margin-bottom: 23px;
+        }
+    }
+
+    &__info{
+        max-height: 210px;
+
+        @media (max-width: 885px) {
+            max-height: 100%;
+        }
+    }
+
+    &__address{
+        flex: 1 0 auto;
+    }
+
+    &__map{
+        width: 744px;
+        height: 469px;
+        margin-top: 5px;
+
+        @media (max-width: 885px) {
+            width: 100%;
+            .ymaps-2-1-79-map{
+                width: 100%;
+            }
+        }
+    }
+
+    &__title{
+        margin-bottom: 40px;
+        text-align: center;
+        font-family: $fontPlayfair;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 43px;
+        color: $color3;
+
+        @media (max-width: 885px) {
+            margin-bottom: 30px;
+            font-size: 27px;
+            line-height: 27px;
+        }
+
+        @media (max-width: 545px) {
+            margin-bottom: 25px;
+            font-size: 24px;
+            line-height: 24px;
+        }
+    }
+
+    &__form{
+        width: 693px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 60px;
+
+        @media (max-width: 885px) {
+            width: 100%;
+        }
+
+        @media (max-width: 545px) {
+            margin-bottom: 35px;
+        }
+    }
+
+    &__input{
+        width: 100%;
+        background-color: $color2;
+        border: 1px solid $color6;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+        padding: 15px 17px;
+        outline: none;
+
+        @media (max-width: 545px) {
+            padding: 11px 10px;
+        }
+    }
+    &__textarea, &__input{
+        font-family: $fontPlayfair;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+    }
+    &__textarea::placeholder, &__input::placeholder{
+        color: $color7;
+    }
+    &__textarea{
+        min-height: 100px;
+        resize: none;
+    }
+    &__button{
+        display: block;
+        margin-left: auto;
+        padding: 10px 36px;
+        background-color: $color2;
+        font-family: $fontPlayfair;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 1px;
+        border: 1px solid $color3;
+        transition: 200ms ease-in;
+        cursor: pointer;
+        &:hover{
+            background-color: $color3;
+            color: $color1;
+            border: 1px solid $color1;
+        }
+
+        @media (max-width: 545px) {
+            padding: 8px 23px;
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+
+    .contacts-list{
+        max-width: 600px;
+
+        @media (max-width: 885px) {
+            font-size: 16px;
+            line-height: 125%; 
+        }
+    }
+
+    .contacts-list__elements{
+        word-break: break-word;
+    }
+}

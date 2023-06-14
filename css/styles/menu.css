@@ -1,0 +1,31 @@
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.menu__item {
+  overflow: hidden;
+}
+.menu__link {
+  color: #000000;
+  text-decoration: none;
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+}
+.menu__link::after {
+  position: relative;
+  left: -1px;
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: #000000;
+  margin-top: 2px;
+  transform: translateX(-100%);
+  transition: 200ms ease-in;
+}
+.menu__link:hover::after {
+  transform: translateX(0);
+  left: 0px;
+}/*# sourceMappingURL=menu.css.map */

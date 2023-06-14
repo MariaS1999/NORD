@@ -1,0 +1,28 @@
+.card-link{
+    width: 109px;
+    padding: 8px 12px;
+    box-sizing: border-box;
+    font-family: $fontPlayfair;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    text-align: center;
+    text-decoration: none;
+    color: $color3;
+    border: 1px solid $color3;
+    transition: 200ms ease-in;
+
+    &::after{
+        top: 1px;
+        height: 8px;
+    }
+
+    &:hover{
+        background-color: $color3;
+        color: $color1;
+
+        &::after{
+            background: url(/images/icons/card_arrow_white.svg) center center no-repeat;
+        }
+    }
+}

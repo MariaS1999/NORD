@@ -1,0 +1,89 @@
+.first{
+    position: relative;
+    min-height: 793px;
+    background: url(/images/first_bg.jpg) center center no-repeat;
+    background-size: cover;
+
+    @media (max-width: 885px) {
+        width: calc(100% + 40px);
+        margin-left: -20px; 
+    }
+
+    @media (max-width: 545px) {
+        width: calc(100% + 20px);
+        margin-left: -10px; 
+    }
+
+    &__name{
+        position: absolute;
+        left: -25px;
+        top: 160px;
+        width: 404px;
+        min-height: 266px;
+        padding: 30px 40px 50px 40px;
+        box-sizing: border-box;
+        background-color: #000000;
+        font-family: 'Playfair Display', serif;
+        font-weight: 400;
+        color: #ffffff;
+
+        @media (max-width: 885px) {
+            left: auto;
+            top: auto;
+            right: 0;
+            bottom: 26px;
+            padding: 12px 17px 21px 17px;
+            min-height: auto;         
+        }
+
+        @media (max-width: 545px) {
+            width: 293px;
+            padding: 9px 12px 19px 12px;           
+        }    
+    }
+    &__title{
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 64px;
+        margin-bottom: 42px;
+
+        @media (max-width: 885px) {
+            font-size: 42px;
+            line-height: 56px;
+            margin-bottom: 15px;
+        }
+    }
+    &__subtitle{
+        font-size: 28px;
+        line-height: 37px;
+        margin-bottom: 15px;
+
+        @media (max-width: 885px) {
+            font-size: 24px;
+            line-height: 29px;
+            margin-bottom: 0;
+        }
+    }
+    &__link{
+        color: #ffffff;
+        font-size: 19px;
+        line-height: 25px;
+        text-decoration: none;
+        transition: 100ms ease-in;
+
+        @media (max-width: 885px) {
+            font-size: 17px;
+            line-height: 21px;
+        }
+
+        &::after{
+            background: url(/images/icons/arrow_first.svg) center center no-repeat;
+        }
+
+        &:hover{
+            &::after{
+                margin-left: 10px;
+            }
+        }
+    }
+}
